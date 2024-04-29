@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Russo One;
+}
+  
+body {
+user-select: none;
+background-color: #8d8d8d;
+}
+
+#root {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+
+
+#drum-machine {
+    display: flex;
+    flex-direction: row; /* Arrange children horizontally */
+    justify-content: center;
+    align-items: center;
+    outline: 5px solid orange;
+    position: relative;
+    width: 660px;
+    text-align: center;
+    background-color: #b3b3b3;
+}
+
+#display {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-gap: 10px; /* Space between buttons */
+    width: 50%; /* Half of the container width */
+    height: 100%;
+    padding: 20px;
+}
+
+.drum-pad {
+    position: relative;
+    float: left;
+    width: 100px;
+    height: 80px;
+    margin: 5px;
+    border-radius: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+#NowPlaying {
+    width: 50%; /* Half of the container width */
+    height: 100%;
+    padding: 20px; /* Padding inside the container */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#VolumeControl {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#VolumeControl button {
+    background-color: orange; /* Red background for buttons */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 3em;
+}
+
+#VolumeControl span {
+    font-size: 3em;
+}
